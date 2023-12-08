@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    background-color: #F4EEE5 !important; font-family: 'Poppins', sans-serif !important; font-size: 16px !important;  
+}
+/*Navbar*/
+nav{
+    background-color: #FFEDCE !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    left: 0px;
+    top: 0px;
+    font-family: 'Averia Serif Libre';
+    font-weight: 600;
+    font-size: 20px;
+    word-spacing: -1.7%;
+    
+}
+
+nav ul li{
+    display: flex;
+    align-items: center !important;
+    margin-right: 15px;
+}
+
+nav a{
+    margin-right: 5px !important;
+    font-size: 18px !important;
+    text-decoration: none;
+}
+
+.navbar-toggler{
+    border: none !important;
+    outline: none !important;
+    padding: 10px 3px !important;
+} 
+
+nav .icon-pp-cart{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    margin-left: auto;
+}
+
+nav .pp > img {
+    display: block;
+    width: 30px;
+    justify-content: start;
+}
+
+nav .cart > img {
+    display: block;
+    width: 38px;
+}
+
+.form-control{
+    width: 300px!important;
+    height: 4vh !important;
+    border-radius: 15px !important;
+}
+
+/*End Navbar*/
+
+/*KIE-Section*/
+
+#kie .U-karosel{
+    font-weight: normal;
+}
+#kie div > .F-letter::first-letter {
+    font-size: x-large;
+}
+
+#kie > .container-grid{
+    display: grid !important;
+    gap: 100px;
+    grid-template-rows: 1fr 1fr;
+}
+
+#kie .products{
+    display: grid;
+    grid-template-areas: 
+    'Deskripsi1 products1'
+    'Deskripsi2 products2'
+    'Deskripsi3 products3';
+    grid-template-columns: 0.8fr 2fr;
+    row-gap: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+#kie .products .Deskripsi1{grid-area: Deskripsi1;}
+#kie .products .Deskripsi2{grid-area: Deskripsi2;}
+#kie .products .Deskripsi3{grid-area: Deskripsi3;}
+#kie .products .products1{grid-area: products1;}
+#kie .products .products2{grid-area: products2;}
+#kie .products .products3{grid-area: products3;}
+
+#kie .products a .nama-produk{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+#kie .products  p{
+    font-weight: 300;
+}
+#kie .nama-produk img{
+    width: 20px;
+    margin-left: 20px;
+}
+
+#kie .products .Deskripsi2, .Deskripsi1, .Deskripsi3{
+    border-top: 1px solid black;
+    padding-top: 30px;
+} 
+
+#kie .produk{
+    border-top: 1px solid black;
+    padding-top: 30px;
+}
+#kie a{
+    text-decoration: none;
+    color: black;
+}
+#kie .produk a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#kie .produk img{
+    width: auto; 
+    height: 215.833px;
+}
+/*End Section*/
+/*FOOTER*/
+footer {
+    background-color: #E9D7B3 !important; 
+}
+
+footer h6{
+    font-size: 15px !important;
+    font-weight: 700;
+    color: #222222d7;
+}
+
+footer p{
+    color: #222222d7;
+    font-size: 13px;
+}
+
+footer .mon-thr{
+    display: flex;
+    justify-content: space-evenly !important;
+}
+footer .fri-sun{
+    display: flex;
+}
+
+footer svg, footer img{
+    margin-right: 3px;
+    width: 10vh !important;
+    height: 4vh !important;
+}
+
+footer #brands{
+    display: flex;
+    flex-direction: row;
+}
+
+footer #brands p{
+    margin-right: 20px;
+}
+
+/*Layar buat Tab*/
+@media screen and (max-width:992px) {
+    nav ul li{
+        align-items: center !important;
+    }
+    
+    nav form input .form-control{
+        width: 1px !important;
+    }
+
+   
+    /*Footer*/
+    footer h6{
+        font-size: 13px !important;
+        font-weight: bold;
+        color: #222222d7;
+    }
+    .footer p{
+        font-size: small;
+    }
+    footer svg, footer img{
+        margin-right: 3px;
+        width: 8vh !important;
+        height: 5vh !important;
+    }
+}
+
+/*Screen untuk HP*/
+@media screen and (max-width:576px){
+    #kie{
+        margin: 20px !important;
+    }
+    #kie .products{
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-areas: 
+        'Deskripsi1'
+        'products1'
+        'Deskripsi2'
+        'products2'
+        'Deskripsi3'
+        'products3'; 
+    }
+    #kie .produk img{
+        width: auto; 
+        height: 150px !important;
+    }
+    #kie .produk a h5{
+        
+        font-size: 15px;
+    }
+    #kie .produk a p{
+        font-size: 12px;
+    }
+    /*.produk a{
+        display: flex;
+        flex-direction: column;
+    } */
+    footer .mon-thr{
+        display: flex;
+        justify-content: start !important;
+    }
+    footer .mon-thr p, footer .mon-thr h6{
+        margin-right: 10px;
+    }
+    footer .fri-sun{
+        display: flex;
+        justify-content: start !important;
+    }
+    footer .partnership{
+        margin-top: 20px;
+    }
+    footer .contactUs{
+        margin-top: 20px;
+    }
+    footer h6{
+        font-size: 13px !important;
+        font-weight: 700;
+        color: #222222a9;
+    }
+    footer p{
+        font-size: 11px !important;
+
+    }
+}
